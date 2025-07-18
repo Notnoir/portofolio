@@ -21,7 +21,7 @@ jobs:
         run: |
           ssh -o StrictHostKeyChecking=no ubuntu@54.226.92.254 << 'EOF'
           cd /var/www/html/portfolio
-          git pull origin main
+          sudo git pull origin main
           # Restart Nginx or any other service if needed
           sudo systemctl restart nginx
           EOF
